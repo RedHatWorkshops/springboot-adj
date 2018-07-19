@@ -41,7 +41,7 @@ public abstract class AbstractBoosterApplicationTest {
                 .statusCode(200)
                 .body("content", is(String.format(getProperties().getMessage(), "John")));
     }
-
+    
     protected abstract GreetingProperties getProperties();
 
 }
